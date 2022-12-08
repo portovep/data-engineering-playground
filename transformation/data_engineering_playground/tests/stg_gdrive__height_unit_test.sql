@@ -3,7 +3,7 @@
 {% call dbt_unit_testing.test ('stg_gdrive__height',
     'should cast string dates to dates') %}
     
-  {% call dbt_unit_testing.mock_ref ('height', {"input_format": "csv"}) %}
+  {% call dbt_unit_testing.mock_ref ('raw_height', {"input_format": "csv"}) %}
     date,height_cm
     '30/08/2022',182
   {% endcall %}

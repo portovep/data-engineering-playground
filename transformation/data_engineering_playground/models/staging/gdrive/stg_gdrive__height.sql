@@ -2,7 +2,7 @@ with
 
 source as (
 
-    select * from {{ ref('height') }}
+    select * from {{ ref('raw_height') }}
 
 ),
 

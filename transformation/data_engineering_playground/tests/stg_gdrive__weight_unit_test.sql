@@ -3,7 +3,7 @@
 {% call dbt_unit_testing.test ('stg_gdrive__weight',
     'should cast string dates to dates') %}
     
-  {% call dbt_unit_testing.mock_ref ('weight', {"input_format": "csv"}) %}
+  {% call dbt_unit_testing.mock_ref ('raw_weight', {"input_format": "csv"}) %}
     date,weight_kg
     '01/07/2009',82.50
   {% endcall %}
