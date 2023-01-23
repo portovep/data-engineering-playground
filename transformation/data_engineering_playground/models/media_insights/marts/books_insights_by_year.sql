@@ -26,6 +26,7 @@ films_insights as (
     select 
         books_read.year,
         books_read.books_read,
+        avg_rating.my_avg_rating,
         avg_rating.avg_rating,
         pages_by_year.total_pages,
         pages_by_year.avg_pages
