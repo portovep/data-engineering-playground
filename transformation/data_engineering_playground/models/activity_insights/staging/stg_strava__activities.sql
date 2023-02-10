@@ -9,7 +9,6 @@ source as (
 renamed as (
 
     select
-        TO_DATE("Activity Date", 'DD/MM/YYYY') as date,
         "Activity Type" as type,
         "Distance" as distance
     from source
