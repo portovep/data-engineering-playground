@@ -12,7 +12,10 @@ renamed as (
         "Activity Type" as type,
         "Distance" as distance_km,
         "Elevation Gain" as elevation_gain_meters,
-        "Calories" as calories
+        "Elevation High" as elevation_high_meters,
+        "Calories" as calories,
+        "Elapsed Time" as activity_duration_seconds,
+        "Max Speed" as max_speed_km_hour
     from source
 
 )

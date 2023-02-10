@@ -16,6 +16,9 @@ group_distance_by_type as (
         sum(elevation_gain_meters) as total_elevation_gain_meters,
         avg(elevation_gain_meters) as avg_elevation_gain_meters,
         avg(calories) as avg_calories,
+        avg(activity_duration_seconds) as avg_activity_duration_seconds,
+        max(max_speed_km_hour) as max_speed_km_hour,
+        max(elevation_high_meters) as max_altitude_meters,
         count(distance_km) as no_activities
     from activities
     group by type
