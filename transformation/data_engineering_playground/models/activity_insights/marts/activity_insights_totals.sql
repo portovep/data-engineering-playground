@@ -11,7 +11,11 @@ activitie_insights_totals as (
 
     select 
         type,
-        distance_km,
+        total_distance_km,
+        round(avg_distance_km::numeric, 2) as avg_distance_km,
+        round(total_elevation_gain_meters::numeric, 2) as total_elevation_gain_meters,
+        round(avg_elevation_gain_meters::numeric, 2) as avg_elevation_gain_meters,
+        round(avg_calories::numeric, 2) as avg_calories,
         no_activities
     from total_distance
     order by type DESC

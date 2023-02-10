@@ -10,7 +10,9 @@ renamed as (
 
     select
         "Activity Type" as type,
-        "Distance" as distance
+        "Distance" as distance_km,
+        "Elevation Gain" as elevation_gain_meters,
+        "Calories" as calories
     from source
 
 )
